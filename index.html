@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Som Ruge</title>
+<style>
+  :root {
+    --bg: #0b0d10;
+    --bg-alt: #12151a;
+    --text: #e7e9ec;
+    --muted: #9aa2ad;
+    --accent: #6ee7b7;
+    --border: #1f242b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem 4rem;
+  }
+  .avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin: 0 0 0.25rem;
+  }
+  .tagline {
+    color: var(--muted);
+    margin: 0 0 2rem;
+    font-size: 1.05rem;
+  }
+  p {
+    color: var(--text);
+  }
+  .section {
+    margin-top: 2.5rem;
+  }
+  .section h2 {
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .links a {
+    color: var(--text);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  footer {
+    margin-top: 4rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="avatar">SR</div>
+    <h1>Som Ruge</h1>
+    <p class="tagline">Building things, one commit at a time.</p>
+
+    <p>
+      Hi, I'm Som — a developer who likes tinkering with code, learning new
+      tools, and shipping small projects. This page is a work in progress.
+    </p>
+
+    <div class="section">
+      <h2>Elsewhere</h2>
+      <div class="links">
+        <a href="https://github.com/somruge" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:ruge.somanath@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> Som Ruge. Built with plain HTML &amp; CSS, deployed on GitHub Pages.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
